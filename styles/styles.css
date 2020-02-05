@@ -1,0 +1,171 @@
+body
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 0 25px 0;
+  background-color: rgb(221, 221, 221);
+  text-justify: auto;
+}
+
+.divcenter
+{
+    padding: 0 15%;
+}
+
+.header
+{
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.bcolor
+{
+    width: 20%;
+}
+
+.bcolor:nth-child(1)
+{
+    background-color: peru;
+}
+
+.bcolor:nth-child(2)
+{
+    background-color: sienna;
+}
+
+.bcolor:nth-child(3)
+{
+    background-color: saddlebrown ;
+}
+
+.bcolor:nth-child(4)
+{
+    background-color: darkred;
+}
+
+.bcolor:nth-child(5)
+{
+    background-color: maroon;
+}
+
+.cadre
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: #ccc;
+    list-style-type: none;
+    margin: auto;
+    padding: 0 0 0 40px;
+}
+
+.nav
+{
+    width: 25%;
+    padding: 15px 0;
+}
+
+#list{
+    display: none;
+}
+
+.icon
+{
+    width: 18px;
+}
+
+.center
+{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.flottante
+{
+    float: right;
+    width: 30%;
+}
+
+.posabso
+{
+    position: absolute;
+}
+
+.sousmenu
+{
+    position: fixed;
+    background-color: #ccc;
+    list-style-type: none;
+    padding: 0% 1%;
+}
+
+.nolink{
+    text-decoration: none;
+    color: black;
+}
+
+.docu-body{
+    list-style: none;
+    text-align: justify;
+}
+
+#paren:hover #list
+{
+    display: inline-flex;
+}
+
+
+footer {
+    background-color:#ccc;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    text-align: center;
+    width:100%;
+    height:25px;
+}
+
+@media (max-width: 600px){
+    .divcenter 
+    {
+        padding: 0%;
+    }
+    
+    .center
+    {
+        width: 100%;
+    }
+
+    body 
+    {
+        margin: 0 1px;
+        
+    }
+
+    span {
+        display: none;
+    }
+
+    .sousmenu
+    {
+        left: 15%;
+        position: flex;
+    }
+
+    #paren:hover #list
+    {
+        display: inline-flex;
+    }
+    #paren:hover .icon
+    {
+        display: none;
+    }
+}
